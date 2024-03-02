@@ -1,13 +1,17 @@
+'use client'
+
 import { ElementType } from 'react'
+import { useFileInput } from './Root'
 
 export type TriggerProps = {
   icon: ElementType
 }
 
 export function Trigger({ icon: Icon }: TriggerProps) {
+  const { id } = useFileInput()
   return (
     <label
-      htmlFor="photo"
+      htmlFor={id}
       className="hover:bg-violet-25 group flex flex-1 cursor-pointer flex-col  items-center gap-3 rounded-lg border border-zinc-300 px-6 py-4 text-center text-zinc-500
       shadow-sm hover:border-violet-200 hover:text-violet-500"
     >

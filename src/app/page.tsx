@@ -1,3 +1,5 @@
+'use client'
+
 import SettingsTabs from '@/components/SettingsTabs'
 import * as Input from '@/components/Input'
 import { Mail, UploadCloud } from 'lucide-react'
@@ -92,7 +94,7 @@ export default function Home() {
             <FileInput.Root className="flex items-start gap-5">
               <FileInput.ImagePreview />
               <FileInput.Trigger icon={UploadCloud} />
-              <FileInput.Control  />
+              <FileInput.Control />
             </FileInput.Root>
           </div>
 
