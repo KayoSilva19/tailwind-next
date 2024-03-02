@@ -1,6 +1,7 @@
 import SettingsTabs from '@/components/SettingsTabs'
 import * as Input from '@/components/Input'
-import { Mail } from 'lucide-react'
+import { Mail, UploadCloud } from 'lucide-react'
+import * as FileInput from '@/components/Form/FileInput'
 
 export default function Home() {
   return (
@@ -88,9 +89,11 @@ export default function Home() {
                 This will be displayed on your profile.
               </p>
             </label>
-            <div className="grid gap-6">
-              <div></div>
-            </div>
+            <FileInput.Root className="flex items-start gap-5">
+              <FileInput.ImagePreview />
+              <FileInput.Trigger icon={UploadCloud} />
+              <FileInput.Control  />
+            </FileInput.Root>
           </div>
 
           <div className="grid-cols-form grid gap-3 pt-5">
@@ -150,9 +153,10 @@ export default function Home() {
                 Share a few snippets of your work.{' '}
               </p>
             </label>
-            <div className="grid gap-6">
-              <div></div>
-            </div>
+            <FileInput.Root>
+              <FileInput.Trigger icon={UploadCloud} />
+              <FileInput.Control multiple />
+            </FileInput.Root>
           </div>
 
           <div className="flex items-center justify-end gap-2 pt-5">
