@@ -12,8 +12,8 @@ import {
   UploadCloud,
 } from 'lucide-react'
 import * as FileInput from '@/components/Form/FileInput'
-import { Select } from '@/components/Form/FileInput/Select'
-import { SelectItem } from '@/components/Form/FileInput/Select/SelectItem'
+import { Select } from '@/components/Form/Select'
+import { SelectItem } from '@/components/Form/Select/SelectItem'
 import TextArea from '@/components/Form/TextArea'
 
 export default function Home() {
