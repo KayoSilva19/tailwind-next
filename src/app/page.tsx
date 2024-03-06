@@ -16,6 +16,7 @@ import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
 import TextArea from '@/components/Form/TextArea'
 import { Button } from '@/components/Button'
+import { ButtonThemeChange } from '@/components/ButtonThemeChange'
 
 export default function Home() {
   return (
@@ -23,8 +24,8 @@ export default function Home() {
       <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
         Settings
       </h1>
+      <ButtonThemeChange />
       <SettingsTabs />
-
       <div className="mt-6 flex flex-col">
         <div className="flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 lg:flex-row lg:items-center dark:border-zinc-700">
           <div className="space-y-1">

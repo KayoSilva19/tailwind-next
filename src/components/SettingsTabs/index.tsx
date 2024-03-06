@@ -65,7 +65,6 @@ export default function SettingsTabs() {
             />
           </Tabs.List>
         </ScrollArea.Viewport>
-
         <ScrollArea.Scrollbar
           className="flex h-0.5 translate-y-1.5 touch-none select-none flex-col bg-zinc-100"
           orientation="horizontal"
