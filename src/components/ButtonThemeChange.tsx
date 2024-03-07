@@ -31,7 +31,7 @@ export function ButtonThemeChange({ variant }: ButtonThemeChangeProps) {
   }
 
   return (
-    <div className="absolute right-8 top-8">
+    <div className="absolute right-8 top-24 z-30 lg:top-8">
       <button onClick={toggleTheme} className={buttonToggle({ variant })}>
         {theme === 'light' && <Sun />}
         {theme === 'dark' && <Moon />}
